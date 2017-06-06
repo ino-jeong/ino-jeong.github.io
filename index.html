@@ -20,24 +20,25 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="resume.html">About</a></li>
+            <!--<li role="presentation"><a href="#">Contact</a></li>-->
           </ul>
         </nav>
-        <h3 class="text-muted">Portfolio - Inoh Jung</h3>
+        <h3 class="text-muted">Engineer</h3>
       </div>
 
       <div class="jumbotron">
-        <h1>Portfolio</h1>
+        <center><h1>Portfolio</h1></center>
         <div align="right">
-          <p class="lead">정인오 / Inoh Jung</p>
-<!--
+          <p class="lead"><b>Inoh Jung / 정인오</b></p>
+
           <p class="lead">inoh.jung@gmail.com</p>
-          <p class="lead">01099079386</p>
--->
+          <p class="lead">010 9907 9386</p>
+
+<!--
           <p><a class="btn btn-lg btn-success" href="#" role="button">inoh.jung@gmail.com</a></p>
           <p><a class="btn btn-lg btn-success" href="#" role="button">010-9907-9386</a></p>
-
+-->
         </div>
       </div>
 
@@ -50,14 +51,14 @@
             <img width="300" src="./page_res/fig001(OCR_data).png"></img>
             <p>data set sample</p>
             <br>
-            <img width="400" src="./page_res/fig005(OCR_multiclass01).png">
+            <img style="border:1px solid black" width="400" src="./page_res/fig005(OCR_multiclass01).png">
             <p>training set prediction (1)</p>
             <br>
-            <img width="400"src="./page_res/fig006(OCR_multiclass02).png">
+            <img style="border:1px solid black" width="400"src="./page_res/fig006(OCR_multiclass02).png">
             <p>training set prediction (2)</p>
           </center>
 
-          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/OCR(multiclass_classification)">https://github.com/ino-jeong/Portfolio/tree/master/OCR(multiclass_classification)</a></li>
+          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/OCR(multiclass_classification)" target="_blank">https://github.com/ino-jeong/Portfolio/tree/master/OCR(multiclass_classification)</a></li>
           <li>Training set accuracy : 94.86%</li>
           <li>Octave(추천) 또는 Matlab에서 main.m 실행</li>
           <li>구현환경 : GNU Octave 3.8, Mac OS</li>
@@ -78,14 +79,14 @@
           <h4>2. OCR implementation, neural-net (Coursera)</h4>
 
           <center>
-            <img width="400" src="./page_res/fig007(OCR_nn01).png">
+            <img style="border:1px solid black" width="400" src="./page_res/fig007(OCR_nn01).png">
             <p>training set prediction (1)</p>
             <br>
-            <img width="400" src="./page_res/fig008(OCR_nn02).png">
+            <img style="border:1px solid black" width="400" src="./page_res/fig008(OCR_nn02).png">
             <p>training set prediction (2)</p>
           </center>
 
-          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/OCR(neural_net)">https://github.com/ino-jeong/Portfolio/tree/master/OCR(neural_net)</a></li>
+          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/OCR(neural_net)" target="_blank">https://github.com/ino-jeong/Portfolio/tree/master/OCR(neural_net)</a></li>
           <li>Training set accuracy : 95~96% (up to random initialization)</li>
           <li>Octave(추천) 또는 Matlab에서 main.m 실행</li>
           <li>구현환경 : GNU Octave 3.8, Mac OS</li>
@@ -103,28 +104,56 @@
           <h4>3. MNIST with CNN implementation</h4>
 
           <center>
-            <img width="400" src="./page_res/fig009(CNN_01).png">
+            <img style="border:1px solid black" width="400" src="./page_res/fig009(CNN_01).png">
             <p>test set prediction (1)</p>
             <br>
-            <img width="400" src="./page_res/fig010(CNN_02).png">
+            <img style="border:1px solid black" width="400" src="./page_res/fig010(CNN_02).png">
             <p>test set prediction (2)</p>
           </center>
 
-          <li>contents 1</li>
-          <li>contents 2</li>
+          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/MNIST_CNN" target="_blank">https://github.com/ino-jeong/Portfolio/tree/master/MNIST_CNN</a></li>
+          <li>Test set accuracy : 98.39% ~ 98.67% (if number of epoch is increased)</li>
+          <li>구현환경 : Python 3.5 with Tensorflow 1.1, Mac OS</li>
+          <li>CNN을 통한 MNIST classifier 구현 (하기 reference 참조) :
+            <ul>
+              - Tensorflow official tutorial<br>
+              <ul><a href="https://www.tensorflow.org/get_started/mnist/pros" target="_blank">https://www.tensorflow.org/get_started/mnist/pros</a></ul>
+              - 'DeepLearningZeroToAll' lecture by prof. Sunghun-Kim<br>
+              <ul><a href="http://hunkim.github.io/ml/" target="_blank">http://hunkim.github.io/ml/</a></ul>
+            </ul>
+          </li>
+          <li>Training set : as per MNIST specification (28 X 28 pixel, grayscale)</li>
+          <li>Model : Convolusion Neural Network :
+            <ul>
+            - 1st layer :
+              <ul>
+                convolution with 3x3 filter, 1 channel in / 32 channel out →
+                ReLu →
+                Max-Pooling with 2x2 filter
+              </ul>
+            - 2nd layer :<br>
+              <ul>
+                convolution with 3x3 filter, 32 channel in / 64 channel out →
+                ReLu →
+                Max-Pooling with 2x2 filter
+              </ul>
+            - 3rd later :
+              <ul>Fully connected layer</ul>
+            </ul>
+          </li>
           <br>
 
           <h4>4. K-means clustering (Coursera)</h4>
 
           <center>
-            <img width="400" src="./page_res/fig002(K_means_before).png">
+            <img style="border:1px solid black" width="400" src="./page_res/fig002(K_means_before).png">
             <p>before k-means clustering<br>(same color means they treated as same group)</p>
             <br>
-            <img width="400" src="./page_res/fig003(K_means_after).png">
+            <img style="border:1px solid black" width="400" src="./page_res/fig003(K_means_after).png">
             <p>after 8-iteration of k-means<br>(same color means they treated as same group)</p>
           </center>
 
-          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/k_means">https://github.com/ino-jeong/Portfolio/tree/master/k_means</a></li>
+          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/k_means" target="_blank">https://github.com/ino-jeong/Portfolio/tree/master/k_means</a></li>
           <li>Octave(추천) 또는 Matlab에서 main.m 실행</li>
           <li>Basic k-means clustering implementation</li>
           <li>구현환경 : GNU Octave 3.8, Mac OS</li>
@@ -141,33 +170,44 @@
 
           <h4>5. Soft Robotic Gripper Fabrication</h4>
 
-          <div class="col-lg-6" align="right">
-
-              <img width="400" src="./page_res/fig011(gripper_mold).jpg">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-4" align="center">
+              <img style="border:1px solid black" width="300" src="./page_res/fig011(gripper_mold).jpg">
               <p>3d printed gripper mold</p>
               <br>
-
           </div>
 
-          <div class="col-lg-6" align="left">
-
-              <img width="400" src="./page_res/fig012(gripper_fab).jpg">
+          <div class="col-lg-4" align="center">
+              <img style="border:1px solid black" width="300" src="./page_res/fig012(gripper_fab).jpg">
               <p>casted silicone gripper</p>
               <br>
-
+          </div>
+          <div class="col-lg-2">
           </div>
 
-          <img width="500" src="./page_res/fig013(gripper_on_arm).png">
+          <center>
+          <img style="border:1px solid black" width="500" src="./page_res/fig013(gripper_on_arm).png">
           <p>attached on robotic arm</p>
+          <br>
 
+          <img style="border:1px solid black" width="500" src="./page_res/fig014(gripper_task01).png">
+          <img style="border:1px solid black" width="500" src="./page_res/fig015(gripper_task02).png">
+          <p>robot grip test</p>
+          <br><br>
+          </center>
 
-          <img width="100%" src="./page_res/fig014(gripper_task01).png">
-          <img width="100%" src="./page_res/fig015(gripper_task02).png">
-
-          <li>Robot arm : (Kuka) KR 6 R900 sixx KR AGILUS</li>
-          <li>Soft robotic gripper :</li>
-          <li>Material : Ecoflex 00-30 silicone</li>
-          <li>Dimension : W 135mm x L 135mm x H 10 mm</li>
+          <li>Robot arm :
+            <ul>
+              - (Kuka) KR 6 R900 sixx KR AGILUS
+            </ul>
+          </li>
+          <li>Soft robotic gripper :
+            <ul>
+              - Material : Ecoflex 00-30 silicone<br>
+              - Dimension : W 135mm x L 135mm x H 10 mm<br>
+            </ul>
+          </li>
           <li>Air powered</li>
           <li>Mold : 3d printed (by ultimaker), pla</li>
           <li>Office paper used for inelastic side (inner side) constrainer</li>
