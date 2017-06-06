@@ -29,33 +29,108 @@
       </div>
 
       <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisi</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <h1>Portfolio</h1>
+        <p class="lead">정인오 / Inoh Jung</p>
+        <p class="lead">inoh.jung@gmail.com</p>
+        <p class="lead">01099079386</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">inoh.jung@gmail.com</a></p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">010-9907-9386</a></p>
       </div>
 
       <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
+        <div class="col-lg-12">
+          <h4>1. OCR implementation, multi-class classification (Coursera)
+</h4>
+
+          <img width="300" src="./page_res/fig001(OCR_data).png">
+          <img width="100%"src="./page_res/fig005(OCR_multiclass01).png">
+          <img width="100%"src="./page_res/fig006(OCR_multiclass02).png">
+
+          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/OCR(multiclass_classification)">https://github.com/ino-jeong/Portfolio/tree/master/OCR(multiclass_classification)</a></li>
+          <li>Test set accuracy : 94.86%</li>
+          <li>Octave(추천) 또는 Matlab에서 main.m 실행</li>
+          <li>구현환경 : GNU Octave 3.8, Mac OS</li>
+          <li>Coursera Machine Learning 과정 구현 과제</li>
+          <li>Training set : 20 X 20 pixel, grayscale, 5000 examples of handwritten digits</li>
+          <li>Model : Multi-class classification</li>
+          <li>Cost function 및 Training / Prediction 과정 구현 :</li>
+            <ul>
+            - lrCostFunction.m<br>
+            - oneVsAll.m<br>
+            - predictOneVsAll.m
+            </ul>
+          </li>
+          <br>
+<!--
           <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+-->
+          <h4>2. OCR implementation, neural-net (Coursera)</h4>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <img width="100%" src="./page_res/fig007(OCR_nn01).png">
+          <img width="100%" src="./page_res/fig008(OCR_nn02).png">
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
+          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/OCR(neural_net)">https://github.com/ino-jeong/Portfolio/tree/master/OCR(neural_net)</a></li>
+          <li>Test set accuracy : 95~96% (up to random initialization)</li>
+          <li>Octave(추천) 또는 Matlab에서 main.m 실행</li>
+          <li>구현환경 : GNU Octave 3.8, Mac OS</li>
+          <li>Coursera Machine Learning 과정 구현 과제</li>
+          <li>Training set : 20 X 20 pixel, grayscale, 5000 examples of handwritten digits (1번과 동일 set)</li>
+          <li>Model : Neural Net, 3 layer (1 hidden layer)</li>
+          <li>Layer 구성 및 backpropagation 구현 :</li>
+            <ul>
+            - sigmoidGradient.m<br>
+            - nnCostFunction.m
+            </ul>
+          </li>
+          <br>
 
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4>3. MNIST with CNN implementation</h4>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <img width="100%" src="./page_res/fig009(CNN_01).png">
+          <img width="100%" src="./page_res/fig010(CNN_02).png">
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
+
+          <li>contents 1</li>
+          <li>contents 2</li>
+          <br>
+
+          <h4>4. K-means clustering (Coursera)</h4>
+
+          <img width="100%" src="./page_res/fig002(K_means_before).png">
+          <img width="100%" src="./page_res/fig003(K_means_after).png">
+
+          <li><a href="https://github.com/ino-jeong/Portfolio/tree/master/k_means">https://github.com/ino-jeong/Portfolio/tree/master/k_means</a></li>
+          <li>Octave(추천) 또는 Matlab에서 main.m 실행</li>
+          <li>Basic k-means clustering implementation</li>
+          <li>구현환경 : GNU Octave 3.8, Mac OS</li>
+          <li>Coursera Machine Learning 과정 구현 과제</li>
+          <li>Model : K-means</li>
+          <li>K-means clustering algorithm 구현 :
+            <ul>
+            - computeCentroids.m<br>
+            - findClosestCentroids.m<br>
+            - kMeansInitCentroids.m
+            </ul>
+          </li>
+          <br>
+
+          <h4>5. Soft Robotic Gripper Fabrication</h4>
+
+          <img width="100%" src="./page_res/fig011(gripper_mold).jpg">
+          <img width="100%" src="./page_res/fig012(gripper_fab).jpg">
+          <img width="100%" src="./page_res/fig013(gripper_on_arm).png">
+          <img width="100%" src="./page_res/fig014(gripper_task01).png">
+          <img width="100%" src="./page_res/fig015(gripper_task02).png">
+
+          <li>Robot arm : (Kuka) KR 6 R900 sixx KR AGILUS</li>
+          <li>Soft robotic gripper :</li>
+          <li>Material : Ecoflex 00-30 silicone</li>
+          <li>Dimension : W 135mm x L 135mm x H 10 mm</li>
+          <li>Air powered</li>
+          <li>Mold : 3d printed (by ultimaker), pla</li>
+          <li>Office paper used for inelastic side (inner side) constrainer</li>
+          <br>
+
       </div>
 
       <footer class="footer">
